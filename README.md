@@ -1,63 +1,29 @@
-# Keratin AuthN
+## Documentation:
 
-[![Keratin Pangolin](https://keratin.tech/pangolin-logo-dark.gif)](https://keratin.tech)
-A modern authentication backend service. ([https://keratin.tech](https://keratin.tech))
+* [Server API](api.md)
+* [Server Configuration](config.md)
 
-[![Gitter](https://badges.gitter.im/keratin/authn-server.svg)](https://gitter.im/keratin/authn-server?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)[![Build Status](https://travis-ci.org/keratin/authn-server.svg?branch=master)](https://travis-ci.org/keratin/authn-server)[![Coverage Status](https://coveralls.io/repos/github/keratin/authn-server/badge.svg)](https://coveralls.io/github/keratin/authn-server)[![Go Report](https://goreportcard.com/badge/github.com/keratin/authn-server)](https://goreportcard.com/report/github.com/keratin/authn-server)
+## Deployment Guides:
 
-## Related
+* [Deployment](guide-deployment.md)
+* [Deploying with Docker](guide-deploying_with_docker.md)
+* [Integrating with an API Gateway](guide-integrating_authn_with_an_api_gateway.md)
 
-This repository builds a backend Go service that provides secured endpoints related to accounts and passwords. You must integrate it with your application's frontend(s) and backend(s).
+## Implementation Guides:
 
-Client libraries are currently available for:
+* [Signup](guide-implementing_signup.md)
+* [Login](guide-implementing_login.md)
+* [Forgotten Passwords](guide-implementing_forgotten_passwords.md)
+* [Change Password](guide-implementing_change_password.md)
+* [Logout](guide-implementing_logout.md)
+* [OAuth](guide-implementing_oauth.md)
 
-* Backends: [Ruby](https://github.com/keratin/authn-rb) • [Go](https://github.com/keratin/authn-go)
-* Frontends: [JavaScript](https://github.com/keratin/authn-js)
+## Other Guides:
 
-If you are missing a client library, please [submit a request](https://github.com/keratin/authn-server/issues).
-
-## Implementation
-
-[Documentation](https://github.com/keratin/authn-server/blob/master/docs/README.md)
-
-## Deployment
-
-[Documentation](https://github.com/keratin/authn-server/blob/master/docs/README.md)
-
-## Configuration
-
-All configuration is through ENV variables.
-
-[Documentation](https://github.com/keratin/authn-server/blob/master/docs/config.md)
-
-## Contributing
-
-Welcome! Please familiarize yourself with the [CONTRIBUTING](CONTRIBUTING.md) doc and the [CODE OF CONDUCT](CODE_OF_CONDUCT.md).
-
-Here's how the dev environment works:
-
-1. `go get github.com/keratin/authn-server`
-2. Install Docker and docker-compose.
-3. Run `make test` to ensure a clean build
-
-To run a dev server:
-
-1. Create a own `.env` file with desired configuration.
-2. Run `make migrate`
-3. Run `make server`
-
-To build a compiled server for integration testing:
-
-1. Run `make build`
-2. Execute `dist/authn` with appropriate ENV variables
-
-To build a Docker image for integration testing:
-
-1. Run `make docker`
-2. Start the `keratin/authn-server:latest` image with appropriate ENV variables
-
-## COPYRIGHT & LICENSE
-
-Copyright (c) 2016-2018 Lance Ivy
-
-Keratin AuthN is distributed under the terms of the LGPLv3. See [LICENSE-LGPLv3](LICENSE-LGPLv3) for details.
+* [Synchronize Emails](guide-synchronize_emails.md)
+* [Displaying a Password Strength Meter](guide-displaying_a_password_strength_meter.md)
+* [Restrict Signups by Invitation](guide-restrict_signups_by_invitation.md)
+* [Restrict Signups to a Specific Domain](guide-restrict_signups_by_domain.md)
+* [Make Sessions Timeout from Inactivity](guide-make_sessions_timeout_from_inactivity.md)
+* [Migrating an Existing Application](guide-migrating_an_existing_application.md)
+* [Confirm Password for Critical Actions](guide-reverify-password.md)
